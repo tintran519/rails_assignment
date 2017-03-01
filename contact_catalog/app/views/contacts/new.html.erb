@@ -1,0 +1,29 @@
+<h1>Add new Contact Information</h1>
+
+<%= form_for @contact do |f| %>
+
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+
+  <div>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+  </div>
+
+  <div>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <%= f.submit "Submit new contact" %>
+
+<% end %>
+
+<%= link_to "Back to all Contacts", contacts_path %>
