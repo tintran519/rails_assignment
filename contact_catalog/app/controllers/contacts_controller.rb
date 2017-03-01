@@ -8,6 +8,8 @@ class ContactsController < ApplicationController
 
   def show
     @contact = Contact.find(params[:id])
+    # # Render json objects
+    # render :json => @contact
   end
 
   def new
