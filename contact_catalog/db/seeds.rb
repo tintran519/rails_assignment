@@ -8,5 +8,5 @@
 
 contacts = Contact.create([
   {name: 'Tin', age: 26, phone_number: 6265928615, email:'tin.tran0519@gmail.com',
-   computer_languages: ['Javascript','Ruby'], pets:['Rabbit','Hamster']}
+   computer_languages: 'Javascript, Ruby', pets: 'Rabbit, Hamster'}
   ])

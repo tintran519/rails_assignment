@@ -1,0 +1,37 @@
+<%= form_for @contact do |f| %>
+
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+
+  <div>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+  </div>
+
+  <div>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div>
+    <%= f.label :computer_languages %>
+    <%= f.text_field :computer_languages %>
+  </div>
+
+  <div>
+    <%= f.label :pets %>
+    <%= f.text_field :pets %>
+  </div>
+
+  <%= f.submit "Submit" %>
+
+<% end %>
+
+<%= link_to "Back to all contacts", contacts_path %>
