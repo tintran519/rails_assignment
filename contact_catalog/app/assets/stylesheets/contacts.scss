@@ -10,7 +10,15 @@ td {
   width: 50%;
 }
 
-input {
+#form_wrapper {
+  margin-left: 41%;
+
+  div {
+    margin-bottom: 2%;
+  }
+}
+
+input, textarea {
   display: block;
 }
 
@@ -22,3 +30,5 @@ input {
   display: inline-block;
   margin-right: 1%;
 }
+
+
