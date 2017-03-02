@@ -1,9 +1,18 @@
 <h1>Contact Log</h1>
-
-<ul>
-  <% @contacts.each do |contact| %>
-    <li>
-      <strong><%= contact.name %></strong>
-    </li>
-  <% end %>
-</ul>
+<table>
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td>
+          <%= link_to (contact.name), contact %>
+        </td>
+        <td>
+          <%= contact.email %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="link">
+  <%= link_to "Add new contact", new_path %>
+</div>

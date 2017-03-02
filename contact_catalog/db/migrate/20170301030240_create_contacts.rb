@@ -5,8 +5,8 @@ class CreateContacts < ActiveRecord::Migration
       t.integer :age
       t.string :phone_number
       t.string :email
-      t.string :computer_languages
-      t.string :pets
+      t.text :computer_languages
+      t.text :pets
 
       t.timestamps null: false
     end

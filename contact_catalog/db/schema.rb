@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20170301030240) do
     t.integer  "age"
     t.string   "phone_number"
     t.string   "email"
-    t.string   "computer_languages"
-    t.string   "pets"
+    t.text     "computer_languages"
+    t.text     "pets"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
